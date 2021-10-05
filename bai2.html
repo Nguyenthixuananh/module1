@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Câu 2: Xây dựng hàm trả về vị trí của phần tử cần tìm trong một mảng cho-->
+<!--trước (Giả sử tất cả các phần tử trong mảng không giống nhau). Hàm có 2-->
+<!--tham số: số phần tử cần tìm, mảng cho trước.-->
+<!--Viết chương trình với một mảng số nguyên được khởi tạo trước. Nhập vào một-->
+<!--giá trị bất kỳ, sau đó kiểm tra xem giá trị số nguyên bất kỳ vừa nhập có nằm-->
+<!--trong mảng đã nhập hay không-->
+<script>
+    function timViTri(num, arr) {
+        let index = -1;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === num) {
+                index = i
+            }
+        }
+        return index;
+    }
+
+    let arr1 = [1, 3, 5, 7, 9, 12];
+    let num = parseInt(prompt("Nhập vào 1 số nguyên bất kỳ: "));
+    if (timViTri(num, arr1)>0) {
+        alert("Số vừa nhập ở vị trí: " + timViTri(num, arr1))
+    } else alert("Số vừa nhập không nằm trong mảng cho trước")
+</script>
+</body>
+</html>

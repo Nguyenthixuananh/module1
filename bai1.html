@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Câu 1:  Xây dựng hàm giải phương trình bậc nhất, biết tham số là các hệ số-->
+<!--nguyên a, b.(ax+b=0) Hàm trả về nghiệm của phương trình theo tham số đã cho.-->
+<!--Viết chương trình sử dụng hàm vừa xây dựng để giải phương trình bậc nhất-->
+<!--với hệ số a = 5; b = 8.-->
+<script>
+    function timX(a, b) {
+        if (b === 0) {
+            if (a === 0) {
+                return "Phương trình vô nghiệm "
+            } else return "Phương trình có vô số nghiệm"
+        } else return "Phương trình có nghiệm là " + -b / a
+    }
+
+    alert(timX(5, 8))
+</script>
+</body>
+</html>
